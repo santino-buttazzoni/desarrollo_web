@@ -1,0 +1,48 @@
+/* selector{
+    propiedad1: valor;
+    propiedad2: valor;
+    propiedad3: valor;
+} */
+
+h1{
+    color: blue;
+    text-align: center;
+}
+body{
+    color: brown;
+}
+/* se aplicara a todos lo <a> */
+a{
+    text-decoration: none; /* le saca el subrayado */
+}
+/* se aplicara a todos los <li> */
+li{
+   list-style: none; /* le saca el punto de listado */
+}
+ol{
+    list-style: decimal;
+}
+
+/* modificar selectores por su ID */
+#principal{
+    background-color: blanchedalmond;
+    list-style: square; 
+    font-size: 50px; /* tamaño de letra */
+}
+/* el ID es un unico identificador */
+
+/* modificar selectores por su CLASS */
+.lista_desordenada{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.texto_verde{
+    color: green;
+    font-weight: bolder;
+}
+.parrafo_principal{
+    font-size: 12px;
+    text-align: justify;
+    color: yellowgreen;
+    background-color: grey;
+    line-height: 24px; /* espacio entre renglones */
+}
