@@ -1,0 +1,31 @@
+body{
+    background-color: beige;
+}
+h1{
+    color: blue;
+    margin: 20px;
+}
+img{
+    border: 2px solid red;
+    width: 50%;
+    height: auto;
+}
+p{
+    text-align: center;
+}
+ul li{
+    color: red;
+}
+ol li{
+    padding: 10px;
+}
+a:hover{
+    color: aqua;
+    font-weight: bolder;
+    text-decoration: double;
+}
+#nombre{
+    border: solid blue 2px;
+}
+
+
