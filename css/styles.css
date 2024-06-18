@@ -16,7 +16,10 @@ a{
     text-decoration: none; /* le saca el subrayado */
 }
 /* se aplicara a todos los <li> */
-li{
+ul li{
+    display: inline; /* posiciona los lementos de manera horizontal -uno al lado del otro- */
+    padding: 5px;
+    margin: 5px;
    list-style: none; /* le saca el punto de listado */
 }
 ol{
@@ -45,4 +48,57 @@ ol{
     color: yellowgreen;
     background-color: grey;
     line-height: 24px; /* espacio entre renglones */
+}
+img{
+    width: 40%;
+    height: auto;
+}
+.caja{
+    width: 5rem;
+    height: 5rem;
+    background-color: yellow;
+    padding: 1rem;
+    border: 3px solid black;
+    margin: 2rem;
+    border-radius: 15%;
+    /* overflow: hidden; -- si hubiese un sobrante de la img 
+    por sobre el tamaño de la caja lo esconderia -- */
+}
+.caja_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+.caja_producto{
+    width: 10rem;
+    height: 10rem;
+    background-color: yellow;
+    padding: 1rem;
+    border-bottom: 5px solid black;
+    border-top: 5px solid red;
+    margin: 2rem;
+    border-radius: 10%;
+}
+.parrafo_footer{
+    text-align: center;
+}
+table td{
+    border: solid black 1px;
+}
+table th{
+    border: solid black 3px;
+}
+td{
+    padding: 5px;
+    text-align: center;
+}
+th{
+    padding: 5px;
+    text-align: center;
+}
+table{
+    margin: 2rem;
+}
+.email{
+    width: 15rem;
 }

@@ -27,5 +27,20 @@ a:hover{
 #nombre{
     border: solid blue 2px;
 }
-
+div{
+    background-color: burlywood;
+}
+#parrafo_01{
+    color: blueviolet;
+    font-weight: bold;
+}
+.parrafo1{
+    color: red;   
+}
+.parrafo2{
+    color: greenyellow;
+}
+.parrafo3{
+    color: orange;
+}
 
