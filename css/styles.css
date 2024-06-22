@@ -20,7 +20,7 @@ ul li{
     display: inline; /* posiciona los lementos de manera horizontal -uno al lado del otro- */
     padding: 5px;
     margin: 5px;
-   list-style: none; /* le saca el punto de listado */
+    list-style: none; /* le saca el punto de listado */
 }
 ol{
     list-style: decimal;
@@ -101,4 +101,36 @@ table{
 }
 .email{
     width: 15rem;
+}
+.padre{
+    display: flex; /*por defecto 
+    si usamos DISPLAY:FLEX el orden es ROW*/
+    width: 800px; /* se establece un ancho fijo del contenedor */
+    margin-left: auto; /* margin autoadaptable en base al ancho para que quede centrado */
+    margin-right: auto; /* margin autoadaptable en base al ancho para que quede centrado */
+    padding: 40px 0;
+    justify-content: space-around; /* alinea los hijos con respecto al contenedor */ 
+    flex-wrap: wrap; /* FLEX-WRAP: WRAP; nos permite que las propiedades de los hijos
+    sean inmutables independientemente de las dimensiones  o caracteristicas
+    de los padres */
+}
+.hijos{
+    width: 100px; /* cada hijo ocupara 100px de ancho, 
+    teniendo en cuenta que el contenendor ocupa 800px*/
+    height: 100px; /* cada hijo ocupara 100px de alto */
+    background-color: beige;
+    text-align: center;
+    border: 1px solid black;
+    margin: 1rem;
+    /* BOX-SIZING: BORDER-BOX; --- nos permite poner el bode del lado de adentro */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.nietos{
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    background-color: blue;
+    border-radius: 50%;
 }
