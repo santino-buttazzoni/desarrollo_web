@@ -1,0 +1,14 @@
+img{
+    width: 50%;
+    height: auto;
+    border: 4px dotted green;
+}
+.flex_fila{
+    display: flex;
+}
+button{
+    width: 150px;
+    border: solid black 3px ;
+    border-radius: 25%;
+    background: radial-gradient(circle, green , lightgreen);
+}

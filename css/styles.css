@@ -122,10 +122,11 @@ table{
     text-align: center;
     border: 1px solid black;
     margin: 1rem;
-    /* BOX-SIZING: BORDER-BOX; --- nos permite poner el bode del lado de adentro */
+    /* BOX-SIZING: BORDER-BOX; --- nos permite poner el borde del lado de adentro */
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
+    border-radius: 5%;
 }
 .nietos{
     width: 30px;

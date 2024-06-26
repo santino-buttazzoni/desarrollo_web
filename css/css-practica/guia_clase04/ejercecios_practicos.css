@@ -1,0 +1,27 @@
+.box{
+    margin: 20px;
+    border: solid blue 5px;
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+    background-color: yellowgreen;
+}
+.block-element_01{
+    display: block;
+    background-color: lightsalmon;
+    width:50px;
+}
+.block-element_02{
+    display: block;
+    background-color: lightgoldenrodyellow;
+    width: 100%;
+}
+.inline-element_1{
+    background-color: aquamarine;
+}
+.inline-element_2{
+    background-color: red;
+}
+.inline-element_3{
+    background-color: lightblue;
+}

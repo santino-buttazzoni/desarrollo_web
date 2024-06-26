@@ -1,0 +1,13 @@
+nav{
+    position: fixed;
+    background-color: blanchedalmond;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+main{
+    margin-top: 55px;
+    padding: 20px;
+    text-align: justify;
+}

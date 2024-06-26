@@ -43,4 +43,12 @@ div{
 .parrafo3{
     color: orange;
 }
+.table{
+    margin: 2rem;
+}
+td, th{
+    padding: 5px;
+    border: black 1px solid;
+    text-align: center;
+}
 
