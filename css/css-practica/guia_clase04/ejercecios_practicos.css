@@ -6,15 +6,17 @@
     padding: 15px;
     background-color: yellowgreen;
 }
-.block-element_01{
+.block--element_01{
     display: block;
     background-color: lightsalmon;
-    width:50px;
+    width: 100%;
+    margin: 0;
 }
-.block-element_02{
+.block--element_02{
     display: block;
     background-color: lightgoldenrodyellow;
     width: 100%;
+    margin: 0;
 }
 .inline-element_1{
     background-color: aquamarine;
@@ -25,3 +27,56 @@
 .inline-element_3{
     background-color: lightblue;
 }
+.inline-block-element-1{
+    width: 50px;
+    height: 50px;
+    background-color: fuchsia;
+}
+.inline-block-element-2{
+    width: 50px;
+    height: 50px;
+    background-color: khaki;
+}
+.inline-block-element-3{
+    width: 50px;
+    height: 50px;
+    background-color: saddlebrown;
+}
+.inline-block-element-4{
+    width: 50px;
+    height: 50px;
+    background-color: antiquewhite;
+}
+.relative-element{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.container{
+    border:solid black 2px;
+}
+.absolute-element{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.fixed-element{
+    border: solid black 2px;
+    background-color: red;
+    position: fixed;
+    top: 50px;
+    left: 60px;
+}
+.sticky-element{ /* no pude separarlo 10px del tope del navegador */
+    top: 10px;
+    position: sticky;
+    width: 75%;
+    border: dotted violet 4px;
+    background:linear-gradient(to left, blue , lightblue);
+}
+/* .sticky_02{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+} */
+
+

@@ -17,11 +17,52 @@ a{
 }
 /* se aplicara a todos los <li> */
 ul li{
-    display: inline; /* posiciona los lementos de manera horizontal -uno al lado del otro- */
+    /* display: inline; /* posiciona los lementos de manera horizontal -uno al lado del otro-
     padding: 5px;
-    margin: 5px;
+    margin: 5px; */
     list-style: none; /* le saca el punto de listado */
+    color: white;
 }
+
+/* grid_clase07 */
+.nav{
+    display: flex;
+    padding: 0 2rem;
+    background-color: lightslategray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    justify-content: space-evenly;
+}
+
+/* si el FLEX esta en ROW
+JUSTIFY-CONTENT alinea horizontalmente
+ALIGN-ITEMS alinea verticalmente
+
+si el FLEX esta en COLUMN
+JUSTIFY-CONTENT alinea verticalmente
+ALIGN-ITEMS alinea horizontalmente */
+
+.nav ul{
+    display: flex;
+    gap: 1rem; /*va a separar los elementos dentro del nav*/
+    width: 100%; /*aplicamos el width para que el UL ocupe el 
+    100% del elemento que lo integra y se pueda alinear*/
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+    background-color: brown;
+    border: solid 2px pink;
+    color: white;
+    height: 3rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 ol{
     list-style: decimal;
 }
@@ -134,4 +175,69 @@ table{
     margin: 8px;
     background-color: blue;
     border-radius: 50%;
+}
+
+
+/* GRID --clase07-- */
+.container_grid{
+    display: grid;
+    grid-template-areas: 
+        "titulo_grid titulo_grid titulo_grid titulo_grid"
+        "sidebar content content content"
+        "sidebar extra-content extra-content sidebar_der"
+        "img_grid img_grid img_grid sidebar_der"
+        "content_02 content_02 content_02 content_02"
+    ;
+    gap: 1rem;
+    padding: 1rem;
+}
+.titulo_grid{
+    grid-area: titulo_grid;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(101, 178, 101);
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgb(37, 74, 37);
+}
+.sidebar_der{
+    grid-area: sidebar_der;
+    background-color: rgb(157, 212, 31);
+    color: black;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.content{
+    grid-area: content;
+    background-color: rgb(185, 104, 104);
+    color: black;
+    font-weight: bolder;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.extra-content{
+    grid-area: extra-content;
+    background-color: rgb(228, 161, 228);
+    color: white;
+    font-weight: bolder;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.img_grid{
+    grid-area: img_grid;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.img_grid img{
+    width: 100%;
+}
+.content_02{
+    grid-area: content_02;
+    background-color: rgb(32, 9, 85);
+    color: white;
+    font-weight: bolder;
+    padding: 1rem;
+    border-radius: .5rem;
 }
