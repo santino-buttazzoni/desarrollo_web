@@ -65,6 +65,8 @@ footer{
 
 ol{
     list-style: decimal;
+    font-size: 25px;
+    margin-right: 10%;
 }
 
 /* modificar selectores por su ID */
