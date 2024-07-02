@@ -1,0 +1,71 @@
+.div-01{
+    display: flex;
+    justify-content: center; /* Se usa justify-content: center; en el contenedor.
+    Esto coloca el hijo en el centro horizontal del contenedor */
+    background-color: beige;
+    border: solid black 3px;
+}
+.div-01_hijo{
+    background-color: burlywood;
+    border: solid rgb(104, 81, 50) 3px;
+    padding: 0.25rem 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.div-02{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Se usa align-items: center; en el contenedor.
+    Esto coloca el hijo en el centro vertical del contenedor */
+    background-color: rgb(100, 210, 237);
+    border: solid black 3px;
+    margin-top: 1rem;
+}
+.div-02_hijo{
+    background-color: rgb(43, 121, 247);
+    border: solid rgb(14, 14, 106) 3px;
+    padding: 0.25rem 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.div-03{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 24, 24);
+    border: solid black 3px;
+    margin-top: 1rem;
+}
+.div-03_hijo{
+    background-color: rgb(213, 89, 89);
+    border: solid rgb(112, 24, 24) 3px;
+    padding: 0.25rem;
+    margin: 0.5rem;
+}
+
+/* justify-content: center; alinea los elementos hijos horizontalmente al centro del contenedor
+align-items: center; alinea los elementos hijos verticalmente al centro del contenedor
+".hijo" es el elemento hijo que queremos centrar tanto horizontal como verticalmente dentro del contenedor */
+
+.div-04{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: green;
+    border: solid black 3px;
+    margin-top: 1rem;
+}
+.div-04_hijos{
+    background-color: rgb(127, 196, 127);
+    border: solid rgb(23, 46, 23) 3px;
+    padding: 0.25rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.lista-desordenada{
+    display: flex;
+    justify-content: space-evenly;
+}
+li{
+    list-style: none;
+}

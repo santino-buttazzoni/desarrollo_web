@@ -181,7 +181,7 @@ table{
 
 
 /* GRID --clase07-- */
-.container_grid{
+/* .container_grid{
     display: grid;
     grid-template-areas: 
         "titulo_grid titulo_grid titulo_grid titulo_grid"
@@ -242,4 +242,164 @@ table{
     font-weight: bolder;
     padding: 1rem;
     border-radius: .5rem;
+} */
+
+/* GRID AVANZADO -- clase 08 -- */
+
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat (4,1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+.titulo_grid{
+    grid-column: 1 / 5;
+    grid-row: 1;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.sidebar{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    background-color: rgb(101, 178, 101);
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgb(37, 74, 37);
+}
+.sidebar_der{
+    grid-column: 4 / 5;
+    grid-row: 2 / 5;
+    background-color: rgb(185, 104, 104);
+    color: black;
+    font-weight: bolder;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.content{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    background-color: rgb(157, 212, 31);
+    color: black;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.extra-content{
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    background-color: rgb(228, 161, 228);
+    color: white;
+    font-weight: bolder;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.img_grid{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.img_grid img{
+    width: 100%;
+}
+.content_02{
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+    background-color: rgb(32, 9, 85);
+    color: white;
+    font-weight: bolder;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+/* RESPONSIVE */
+
+/* -Medidas estandares-
+320px — 480px: Dispositivos móviles
+481px — 768px: iPads, Tabletas
+769px — 1024px: pantallas pequeñas, laptops
+1025px — 1200px: Computadoras de escritorio, pantallas grandes
+1201px y más —  Pantallas extra-grandes, TV
+*/
+@media screen and (min-width: 1201px){ 
+    /* cuando el WIDTH sea inferior a 1201px se aplican las propiedades */
+    
+    body{
+        background-color:beige;
+    }
+}
+@media screen and (max-width: 1200px){ 
+    /* cuando el WIDTH sea mayor a 1200px se aplican las propiedades */
+    
+    .nav, footer{
+        background-color: rgb(242, 244, 128);
+    }
+    .sidebar{ 
+        /*le aplicas los cambios que quieras a la etiqueta segun la condicon de WIDTH */
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; 
+    }
+    .content{
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+}
+@media screen and (max-width: 1024px){
+    .container_grid{
+        grid-template-columns: repeat (3,1fr);
+    }
+    .sidebar_der{
+        grid-column: 1 / 4;
+        grid-row: 5  / 6;
+    }
+    .content_02{
+        grid-column: 1 / 4;
+        grid-row: 6 / 7;
+    }
+    h2{
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .sidebar{ 
+        grid-column: 1 / 2;
+        grid-row: 3 / 5; 
+    }
+    .img_grid{
+        grid-column: 2 / 4;
+        grid-row: 4 / 5;
+    }
+}
+@media screen and (max-width: 480px){
+    .container_grid{
+        grid-template-columns: repeat (1fr);
+    }
+    .titulo_grid, .sidebar, .sidebar_der, .content, .extra-content, .img_grid, .content_02{
+        grid-column: 1 / -1;
+    }
+    .content{
+        grid-row: 3 / 5;
+    }
+    .titulo_grid{
+        grid-row: 2 / 3;
+    }
+    .sidebar{
+        grid-row: 5 / 6;
+    }
+    .sidebar_der{
+        grid-row: 6 / 8;
+    }
+    .extra-content{
+        grid-row: 8 / 12; 
+    }
+    .img_grid{
+        grid-row: 12 / 14;
+    }
+    .content_02{
+        grid-row: 14 / 16;
+    }
 }

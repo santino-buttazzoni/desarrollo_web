@@ -153,7 +153,7 @@ footer{
     right: 0;
     width: 100%;
     background-color:rgb(197, 131, 84);
-    border: solid 4px black;
+    /* border: solid 4px black; */
     color: white;
     font-weight: bolder;
     height: 3rem;
