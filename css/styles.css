@@ -10,6 +10,8 @@ h1{
 }
 body{
     color: brown;
+    margin: 0;
+    padding: 0;
 }
 /* se aplicara a todos lo <a> */
 a{
@@ -49,7 +51,7 @@ ALIGN-ITEMS alinea horizontalmente */
     100% del elemento que lo integra y se pueda alinear*/
 }
 
-footer{
+.footer{
     position: sticky;
     bottom: 0;
     background-color: brown;
@@ -401,5 +403,82 @@ table{
     }
     .content_02{
         grid-row: 14 / 16;
+    }
+}
+
+
+/* pagina -PRODUCTO- */
+.contenedor_productos{
+    max-width: 1080px;
+    height: 100vh;
+    margin: 4rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.card{
+    width: 320px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem ;
+    box-shadow: .5rem .5rem 1rem #cccccc;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: .5rem .5rem 1rem #1f1e1e;
+}
+.card_img{
+    width: 280px;
+    height: 280px;
+    padding: 1rem;
+}
+.card_img img{
+    width: calc(100% - 1rem);
+}
+.card_text{
+    width: 280px;
+    padding: 0 1rem 1rem 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.card_text h4{
+    font-size: 1.5rem;
+}
+.card_text p{ 
+    font-size: 1rem;
+    padding: .125rem;
+}
+.card_button{
+    width: 280px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_button button{
+    width: 10rem;
+    height: 2.2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,white, rgb(86, 45, 86));
+}
+.card_button button:hover{
+    background: linear-gradient(to left,white, rgb(86, 45, 86));
+}
+@media screen and (max-width: 1200px){ 
+    .contenedor_productos{
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 480px){
+    .contenedor_productos{
+        justify-content: center;
     }
 }
