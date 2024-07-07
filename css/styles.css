@@ -10,8 +10,6 @@ h1{
 }
 body{
     color: brown;
-    margin: 0;
-    padding: 0;
 }
 /* se aplicara a todos lo <a> */
 a{
@@ -262,7 +260,6 @@ table{
     margin: 1rem;
     font-size: 2rem;
     padding: 1rem;
-    text-align: justify;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .sidebar{
@@ -329,6 +326,32 @@ table{
     border-radius: .5rem;
 }
 
+/* PSEUDOCLASES */
+
+/* Por ejemplo HOVER */
+
+/* selector : pseudoclase{
+    propiedad : valor;
+ } */
+
+a:link{ /* se activa simpre */
+    background-color: aqua;
+ }
+a:active{ /* se activa al clickear */
+    background-color: red;
+}
+a:visited{ /* se activa despues de clickear*/
+    background-color: blue;
+}
+
+.contenedor_productos .card:nth-child(1){ /*los cambios se aplican sobre el primer hijo*/
+    background-color: blue;
+}
+.contenedor_productos .card:nth-child(2){ /*los cambios se aplican sobre el segundo hijo*/
+    background-color: violet;
+}
+
+
 /* RESPONSIVE */
 
 /* -Medidas estandares-
@@ -338,6 +361,11 @@ table{
 1025px — 1200px: Computadoras de escritorio, pantallas grandes
 1201px y más —  Pantallas extra-grandes, TV
 */
+
+/* MAX-WIDTH aplica las propiedades a partir de la medida que pongamos */
+/* MIN-WIDTH aplica las propiedades hasta llegas a la medida que pongamos */
+
+
 @media screen and (min-width: 1201px){ 
     /* cuando el WIDTH sea inferior a 1201px se aplican las propiedades */
     
@@ -448,6 +476,9 @@ table{
     width: 280px;
     height: 280px;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card_img img{
     width: calc(100% - 1rem);
