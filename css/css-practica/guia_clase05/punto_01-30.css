@@ -69,3 +69,69 @@ align-items: center; alinea los elementos hijos verticalmente al centro del cont
 li{
     list-style: none;
 }
+/* disposicion horizontal con FLEXBOX */
+.lista_desordenada{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: cadetblue;
+}
+.lista_desordenada ul li{
+    display: inline;
+    padding: 1rem;  
+}
+/* Flex-grow  -falta ver en clase-*/
+.container_flexgrow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgb(175, 235, 115);
+    border-radius: 5rem;
+    border: black 2px solid;
+    width: 100%;
+}
+.container_flexgrow div{
+    border: black 3px double;
+    margin: 1rem;
+    height: 40px;
+}
+.flexgrow-1{
+    flex-grow: 1;
+    /* margin: 1rem; */
+    height: 40px;
+}
+.flexgrow-2{
+    flex-grow: 2;
+    /* margin: 1rem; */
+    height: 40px;
+}
+/* Flex-shrink*/
+/* REVISAR */
+.container_flexshrink{
+    background-color: deeppink;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5rem;
+    border: black 2px solid;
+    width: 100%;
+    resize: horizontal;
+    overflow: auto;
+}
+.container_flexshrink div{
+    margin: 1rem;
+    height: 40px;
+    border: black 3px double;
+    flex-basis: 200px;
+}
+.flexgrow-1{
+    flex-shrink: 0;
+}
+.flexgrow-2{
+    flex-shrink: 3;
+}
+
+

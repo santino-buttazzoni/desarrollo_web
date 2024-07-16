@@ -525,3 +525,69 @@ a:visited{ /* se activa despues de clickear*/
         justify-content: center;
     }
 }
+
+
+/* Transformaciones y efector */
+.container_efects { 
+    perspective: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1080px;
+    margin: 4rem auto;
+    min-height: 600px;
+}
+.elemento .elemento_img{
+    width: 300px;
+    border: solid black 3px
+}
+/* -Traslacion- */
+/* .elemento{
+    transform: translate(50px,50px);  
+   /* -para desplazar un elemento de una posicion a otra-
+    -el primer valor es a la derecha y el segundo asia abajo-
+}*/ 
+
+/* -Rotacion- */
+/* .elemento{
+    transform: rotate(30deg);
+    -para rotar la posicion del elemento sobre un angulo en particular-
+    transform-origin: top right; -- va a tomar el angulo superior derecho como origen --
+    -los valor siempre se expresan en DEG-
+}*/
+
+/* -Escalas-
+.elemento{
+    transform: scale(1.5); 
+     -es una expresion porcentual para modificar el tamaño
+    -1=100% 2=200% 1.5=150% . . .
+    - se puede moficar el ancho, alto o ambos simultaneamente
+}*/
+
+/* Skew */
+/* .elemento{
+    transform: skew(30deg);
+    -deformacion de la figura segun angulos o posicion/origin-
+}*/
+
+/* Transformacion integrada */
+/* .elemento .elemento_img:hover{
+    transform: 
+            translate(100px, 50px)
+            rotate(-45deg)
+            scale(0.5)
+            skew(20deg); 
+} */
+
+/* Transformacion en 3D */
+/* .container_efects .elemento .elemento_img:hover{
+    transform: 
+    /* rotateX(40deg) */
+    /* rotateY(30deg) */
+    /* rotateZ(50deg) */
+    /* -solamente se puede aplicar uno a la vez, no en forma simultanea los tres- */
+    
+.container_efects .elemento .elemento_img:hover{
+    transform: scale3d(1,2,3);
+}
+
