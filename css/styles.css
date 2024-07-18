@@ -1,638 +1,274 @@
-/* selector{
-    propiedad1: valor;
-    propiedad2: valor;
-    propiedad3: valor;
-} */
-
-h1{
-    color: blue;
-    text-align: center;
-}
 body{
-    color: brown;
+    margin: 0;
 }
-/* se aplicara a todos lo <a> */
-a{
-    text-decoration: none; /* le saca el subrayado */
-}
-/* se aplicara a todos los <li> */
-ul li{
-    /* display: inline; /* posiciona los lementos de manera horizontal -uno al lado del otro-
-    padding: 5px;
-    margin: 5px; */
-    list-style: none; /* le saca el punto de listado */
-    color: white;
-}
-
-/* grid_clase07 */
-.nav{
-    display: flex;
-    padding: 0 2rem;
-    background-color: lightslategray;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1rem;
-    justify-content: space-evenly;
-}
-
-/* si el FLEX esta en ROW
-JUSTIFY-CONTENT alinea horizontalmente
-ALIGN-ITEMS alinea verticalmente
-
-si el FLEX esta en COLUMN
-JUSTIFY-CONTENT alinea verticalmente
-ALIGN-ITEMS alinea horizontalmente */
-
-.nav ul{
-    display: flex;
-    gap: 1rem; /*va a separar los elementos dentro del nav*/
-    width: 100%; /*aplicamos el width para que el UL ocupe el 
-    100% del elemento que lo integra y se pueda alinear*/
-}
-
-.footer{
-    position: sticky;
-    bottom: 0;
-    background-color: brown;
-    border: solid 2px pink;
-    color: white;
-    height: 3rem;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-ol{
-    list-style: decimal;
-    font-size: 25px;
-    margin-right: 10%;
-}
-
-/* modificar selectores por su ID */
-#principal{
-    background-color: blanchedalmond;
-    list-style: square; 
-    font-size: 50px; /* tamaño de letra */
-}
-/* el ID es un unico identificador */
-
-/* modificar selectores por su CLASS */
+/* punto 5, 6 y 16 */
 .lista_desordenada{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.texto_verde{
-    color: green;
-    font-weight: bolder;
-}
-.parrafo_principal{
-    font-size: 12px;
-    text-align: justify;
-    color: yellowgreen;
-    background-color: grey;
-    line-height: 24px; /* espacio entre renglones */
-}
-img{
-    width: 40%;
-    height: auto;
-}
-.caja{
-    width: 5rem;
-    height: 5rem;
-    background-color: yellow;
-    padding: 1rem;
-    border: 3px solid black;
-    margin: 2rem;
-    border-radius: 15%;
-    /* overflow: hidden; -- si hubiese un sobrante de la img 
-    por sobre el tamaño de la caja lo esconderia -- */
-}
-.caja_img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+    margin-top: 0;
+    padding: 1.5rem;
     width: 100%;
-    height: 100%;
-    border-radius: 15%;
 }
-.caja_producto{
-    width: 10rem;
-    height: 10rem;
-    background-color: yellow;
-    padding: 1rem;
-    border-bottom: 5px solid black;
-    border-top: 5px solid red;
-    margin: 2rem;
-    border-radius: 10%;
+.lista_desordenada a{
+    text-decoration: underline double;
+    color: black;
 }
-.parrafo_footer{
+footer{
+    background-color: antiquewhite;
+    padding: 0.5rem;
     text-align: center;
 }
-table td{
-    border: solid black 1px;
+footer p{
+    font-weight: bold;
 }
-table th{
+/* punto 1 */
+.container_01{
+    display: flex;
+    justify-content: center; /* alinea horizontalmente */
+    background-color: #7878f1;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+.container_01 div{
     border: solid black 3px;
+    padding: 0.5rem;
+    background-color: white;
+    font-weight: bold;
 }
-td{
-    padding: 5px;
-    text-align: center;
-}
-th{
-    padding: 5px;
-    text-align: center;
-}
-table{
-    margin: 2rem;
-}
-.email{
-    width: 15rem;
-}
-.padre{
-    display: flex; /*por defecto 
-    si usamos DISPLAY:FLEX el orden es ROW*/
-    width: 800px; /* se establece un ancho fijo del contenedor */
-    margin-left: auto; /* margin autoadaptable en base al ancho para que quede centrado */
-    margin-right: auto; /* margin autoadaptable en base al ancho para que quede centrado */
-    padding: 40px 0;
-    justify-content: space-around; /* alinea los hijos con respecto al contenedor */ 
-    flex-wrap: wrap; /* FLEX-WRAP: WRAP; nos permite que las propiedades de los hijos
-    sean inmutables independientemente de las dimensiones  o caracteristicas
-    de los padres */
-}
-.hijos{
-    width: 100px; /* cada hijo ocupara 100px de ancho, 
-    teniendo en cuenta que el contenendor ocupa 800px*/
-    height: 100px; /* cada hijo ocupara 100px de alto */
-    background-color: beige;
-    text-align: center;
-    border: 1px solid black;
-    margin: 1rem;
-    /* BOX-SIZING: BORDER-BOX; --- nos permite poner el borde del lado de adentro */
+/* punto 2 */
+.container_02{
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    border-radius: 5%;
-}
-.nietos{
-    width: 30px;
-    height: 30px;
-    margin: 8px;
-    background-color: blue;
-    border-radius: 50%;
-}
-
-
-/* GRID --clase07-- */
-/* .container_grid{
-    display: grid;
-    grid-template-areas: 
-        "titulo_grid titulo_grid titulo_grid titulo_grid"
-        "sidebar content content content"
-        "sidebar extra-content extra-content sidebar_der"
-        "img_grid img_grid img_grid sidebar_der"
-        "content_02 content_02 content_02 content_02"
-    ;
-    gap: 1rem;
-    padding: 1rem;
-}
-.titulo_grid{
-    grid-area: titulo_grid;
-}
-.sidebar{
-    grid-area: sidebar;
-    background-color: rgb(101, 178, 101);
-    color: aliceblue;
-    padding: 1rem;
-    border-radius: .5rem;
-    box-shadow: 0 2px 4px rgb(37, 74, 37);
-}
-.sidebar_der{
-    grid-area: sidebar_der;
-    background-color: rgb(157, 212, 31);
-    color: black;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-.content{
-    grid-area: content;
-    background-color: rgb(185, 104, 104);
-    color: black;
-    font-weight: bolder;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-.extra-content{
-    grid-area: extra-content;
-    background-color: rgb(228, 161, 228);
-    color: white;
-    font-weight: bolder;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-.img_grid{
-    grid-area: img_grid;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-.img_grid img{
-    width: 100%;
-}
-.content_02{
-    grid-area: content_02;
-    background-color: rgb(32, 9, 85);
-    color: white;
-    font-weight: bolder;
-    padding: 1rem;
-    border-radius: .5rem;
-} */
-
-/* GRID AVANZADO -- clase 08 -- */
-
-.container_grid{
-    display: grid;
-    grid-template-columns: repeat (4,1fr);
-    grid-template-rows: auto;
-    gap: 1rem;
-    padding: 1rem;
-}
-.titulo_grid{
-    grid-column: 1 / 5;
-    grid-row: 1;
-    text-align: center;
+    align-items: center; /* alinea verticalmente */
+    background-color: #78f1a2;
     margin: 1rem;
-    font-size: 2rem;
     padding: 1rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid black 2px;
+    border-radius: 10px;
 }
-.sidebar{
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-    text-align: justify;
-    margin: 1rem;
-    background-color: rgb(101, 178, 101);
-    color: aliceblue;
-    padding: 1rem;
-    border-radius: .5rem;
-    box-shadow: 0 2px 4px rgb(37, 74, 37);
+.container_02 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    background-color: white;
+    font-weight: bold;
 }
-.sidebar_der{
-    grid-column: 4 / 5;
-    grid-row: 2 / 5;
-    text-align: justify;
-    margin: 1rem;
-    background-color: rgb(185, 104, 104);
-    color: black;
-    font-weight: bolder;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-.content{
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-    text-align: justify;
-    margin: 1rem;
-    background-color: rgb(157, 212, 31);
-    color: black;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-.extra-content{
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
-    text-align: justify;
-    margin: 1rem;
-    background-color: rgb(228, 161, 228);
-    color: white;
-    font-weight: bolder;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-.img_grid{
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-.img_grid img{
-    width: 100%;
-}
-.content_02{
-    grid-column: 1 / 5;
-    grid-row: 5 / 6;
-    text-align: justify;
-    margin: 1rem;
-    background-color: rgb(32, 9, 85);
-    color: white;
-    font-weight: bolder;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-
-/* PSEUDOCLASES */
-
-/* Por ejemplo HOVER */
-
-/* selector : pseudoclase{
-    propiedad : valor;
- } */
-
-a:link{ /* se activa simpre */
-    background-color: aqua;
- }
-a:active{ /* se activa al clickear */
-    background-color: red;
-}
-a:visited{ /* se activa despues de clickear*/
-    background-color: blue;
-}
-
-.contenedor_productos .card:nth-child(1){ /*los cambios se aplican sobre el primer hijo*/
-    background-color: blue;
-}
-.contenedor_productos .card:nth-child(2){ /*los cambios se aplican sobre el segundo hijo*/
-    background-color: violet;
-}
-
-
-/* RESPONSIVE */
-
-/* -Medidas estandares-
-320px — 480px: Dispositivos móviles
-481px — 768px: iPads, Tabletas
-769px — 1024px: pantallas pequeñas, laptops
-1025px — 1200px: Computadoras de escritorio, pantallas grandes
-1201px y más —  Pantallas extra-grandes, TV
-*/
-
-/* MAX-WIDTH aplica las propiedades a partir de la medida que pongamos */
-/* MIN-WIDTH aplica las propiedades hasta llegas a la medida que pongamos */
-
-
-@media screen and (min-width: 1201px){ 
-    /* cuando el WIDTH sea inferior a 1201px se aplican las propiedades */
-    
-    body{
-        background-color:beige;
-    }
-}
-@media screen and (max-width: 1200px){ 
-    /* cuando el WIDTH sea mayor a 1200px se aplican las propiedades */
-    
-    .nav, footer{
-        background-color: rgb(242, 244, 128);
-    }
-    .sidebar{ 
-        /*le aplicas los cambios que quieras a la etiqueta segun la condicon de WIDTH */
-        grid-column: 1 / 2;
-        grid-row: 3 / 4; 
-    }
-    .content{
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-    }
-}
-@media screen and (max-width: 1024px){
-    .container_grid{
-        grid-template-columns: repeat (3,1fr);
-    }
-    .sidebar_der{
-        grid-column: 1 / 4;
-        grid-row: 5  / 6;
-    }
-    .content_02{
-        grid-column: 1 / 4;
-        grid-row: 6 / 7;
-    }
-    h2{
-        font-size: 1.5rem;
-        margin-bottom: .5rem;
-    }
-}
-@media screen and (max-width: 768px){
-    .sidebar{ 
-        grid-column: 1 / 2;
-        grid-row: 3 / 5; 
-    }
-    .img_grid{
-        grid-column: 2 / 4;
-        grid-row: 4 / 5;
-    }
-}
-@media screen and (max-width: 480px){
-    .container_grid{
-        grid-template-columns: repeat (1fr);
-    }
-    .titulo_grid, .sidebar, .sidebar_der, .content, .extra-content, .img_grid, .content_02{
-        grid-column: 1 / -1;
-    }
-    .content{
-        grid-row: 3 / 5;
-    }
-    .titulo_grid{
-        grid-row: 2 / 3;
-    }
-    .sidebar{
-        grid-row: 5 / 6;
-    }
-    .sidebar_der{
-        grid-row: 6 / 8;
-    }
-    .extra-content{
-        grid-row: 8 / 12; 
-    }
-    .img_grid{
-        grid-row: 12 / 14;
-    }
-    .content_02{
-        grid-row: 14 / 16;
-    }
-}
-
-
-/* pagina -PRODUCTO- */
-.contenedor_productos{
-    max-width: 1080px;
-    height: 100vh;
-    margin: 4rem 0;
-
+/* punto 3 */
+.container_03{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: center; /* alinea horizontalmente */
+    align-items: center; /* alinea verticalmente */
+    background-color: #dff178;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px;
 }
-.card{
-    width: 320px;
-    height: 600px;
+.container_03 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    background-color: white;
+    font-weight: bold;
+}
+/* punto 4 */
+.container_04{
+    display: flex;
+    justify-content: space-evenly; /* alinea horizontalmente */
+    align-items: center; /* alinea verticalmente */
+    background-color: #f17878;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px;   
+}
+.container_04 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    background-color: white;
+    font-weight: bold;
+}
+/* punto 11 y 13 */
+.container_11{
+    display: flex;
+    align-items: flex-start; /* alinea verticalmente */
+    background-color: #f1b778;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px; 
+}
+.container_11 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background-color: white;
+    font-weight: bold;
+}
+.container_11_2{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 1rem ;
-    box-shadow: .5rem .5rem 1rem #cccccc;
-    cursor: pointer;
-}
-.card:hover{
-    box-shadow: .5rem .5rem 1rem #1f1e1e;
-}
-.card_img{
-    width: 280px;
-    height: 280px;
+    align-items: center; /* alinea verticalmente */
+    background-color: #78f1e1;
+    margin: 1rem;
     padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px; 
+}
+.container_11_2 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background-color: white;
+    font-weight: bold;
+}
+.container_11_3{
+    display: flex;
+    align-items: flex-end; /* alinea verticalmente */
+    background-color: #f178c5;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px; 
+}
+.container_11_3 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background-color: white;
+    font-weight: bold;
+}
+/* punto 12 */
+.container_12{
+    display: flex;
+    justify-content: start;
+    background-color: #c578f1;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px; 
+}
+.container_12 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background-color: white;
+    font-weight: bold;
+}
+.container_12_2{
     display: flex;
     justify-content: center;
-    align-items: center;
+    background-color: #bc2886;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px; 
 }
-.card_img img{
-    width: calc(100% - 1rem);
+.container_12_2 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background-color: white;
+    font-weight: bold;
 }
-.card_text{
-    width: 280px;
-    padding: 0 1rem 1rem 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-}
-.card_text h4{
-    font-size: 1.5rem;
-}
-.card_text p{ 
-    font-size: 1rem;
-    padding: .125rem;
-}
-.card_button{
-    width: 280px;
-    height: 100px;
+.container_12_3{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    background-color: #278b3e;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px; 
 }
-.card_button button{
-    width: 10rem;
-    height: 2.2rem;
-    text-transform: uppercase;
-    border: none;
-    border-radius: .25rem;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right,white, rgb(86, 45, 86));
+.container_12_3 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background-color: white;
+    font-weight: bold;
 }
-.card_button button:hover{
-    background: linear-gradient(to left,white, rgb(86, 45, 86));
-}
-@media screen and (max-width: 1200px){ 
-    .contenedor_productos{
-        justify-content: space-evenly;
-    }
-}
-@media screen and (max-width: 480px){
-    .contenedor_productos{
-        justify-content: center;
-    }
-}
-
-
-/* Transformaciones y efector */
-.container_efects { 
-    perspective: 800px;
+/* punto 14 */
+.container_14{
     display: flex;
-    justify-content: center;
     align-items: center;
-    max-width: 1080px;
-    margin: 4rem auto;
-    min-height: 600px;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background-color: #277e8b;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px; 
 }
-.elemento .elemento_img{
-    width: 300px;
-    border: solid black 3px
-} 
-/* -Traslacion- */
-/* .elemento{
-    transform: translate(50px,50px);  
-   /* -para desplazar un elemento de una posicion a otra-
-    -el primer valor es a la derecha y el segundo asia abajo-
-}*/ 
-
-/* -Rotacion- */
-/* .elemento{
-    transform: rotate(30deg);
-    -para rotar la posicion del elemento sobre un angulo en particular-
-    transform-origin: top right; -- va a tomar el angulo superior derecho como origen --
-    -los valor siempre se expresan en DEG-
-}*/
-
-/* -Escalas-
-.elemento{
-    transform: scale(1.5); 
-     -es una expresion porcentual para modificar el tamaño
-    -1=100% 2=200% 1.5=150% . . .
-    - se puede moficar el ancho, alto o ambos simultaneamente
-}*/
-
-/* Skew */
-/* .elemento{
-    transform: skew(30deg);
-    -deformacion de la figura segun angulos o posicion/origin-
-}*/
-
-/* Transformacion integrada */
-/* .elemento .elemento_img:hover{
-    transform: 
-            translate(100px, 50px)
-            rotate(-45deg)
-            scale(0.5)
-            skew(20deg); 
-} */
-
-/* Transformacion en 3D */
-/* .container_efects .elemento .elemento_img:hover{
-    transform: 
-    /* rotateX(40deg) */
-    /* rotateY(30deg) */
-    /* rotateZ(50deg) */
-    /* -solamente se puede aplicar uno a la vez, no en forma simultanea los tres- */
-    
-/* .container_efects .elemento .elemento_img:hover{
-    transform: scale3d(1,2,3);
-} */
-
-/* Animaciones */
-
-/* Propiedad de -transition- */
-/* .container_efects .elemento img{
-    transition: all 0.5s ease-in-out; 
-    /* el ALL representa sobre que atributos se aplica la transicion */
-    /* puede aplicarse por ej solo al border-radius */
-/* }
-.container_efects .elemento img:hover{
-    transform: scale(2);
-    border-radius: 15%;
-    filter:grayscale(1);
-} */ 
-
-/* Propiedad de -animation- con @keyframes */
-/* @keyframes ejemplo{
-    0%{
-        transform: translate(0) ;
-    }
-    33%{
-        transform: translate(200px) ;
-    }
-    66%{
-        transform: translate(-200px);
-    }
-    100%{
-        transform:traslate (0) ;
-    }
+.container_14 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background-color: white;
+    font-weight: bold;
 }
-.container_efects .elemento img{
-    animation: ejemplo /* que @keyframe usamos */ /*3s cuanto dura */ /*infinite /* a la largo de cuanto tiempo;
-    /* animation-timing-function: ease; para que haga el movimiento uniforme */
-
-/* Pseudoelementos */
-
-/* ::before - el contenido va a aparecer ANTES del elemento -*/
-.container_efects .elemento::before{
-    content: "BEFORE";
-    color: red;
+/* punto 15 --PREGUNTAR como seria-- */
+.container_15{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #27388b;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px; 
 }
-
-/* ::after  - el contenido va a aparecer DESPUES del elemento - */ 
-.container_efects .elemento::after{
-    content: "🔥";
+.container_15 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background-color: white;
+    font-weight: bold;
+}
+.item-align-self-center{
+    align-self: flex-end;
+}
+/* punto 18 */
+.container_18{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    background-color: #af8d52;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px; 
+}
+.container_18 div{
+    border: solid black 3px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background-color: white;
+    font-weight: bold;
+}
+/* punto 19 */
+.container_19{
+    width: 790px;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    background-color: #af6252;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 2px;
+    border-radius: 10px; 
+}
+.container_19 div{
+    flex: 1 0 25% ;
+    border: solid black 3px;
+    padding: 20px;
+    margin: 0.25rem;
+    background-color: white;
+    font-weight: bold;
 }
