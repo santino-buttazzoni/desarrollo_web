@@ -540,7 +540,7 @@ a:visited{ /* se activa despues de clickear*/
 .elemento .elemento_img{
     width: 300px;
     border: solid black 3px
-}
+} 
 /* -Traslacion- */
 /* .elemento{
     transform: translate(50px,50px);  
@@ -587,7 +587,52 @@ a:visited{ /* se activa despues de clickear*/
     /* rotateZ(50deg) */
     /* -solamente se puede aplicar uno a la vez, no en forma simultanea los tres- */
     
-.container_efects .elemento .elemento_img:hover{
+/* .container_efects .elemento .elemento_img:hover{
     transform: scale3d(1,2,3);
+} */
+
+/* Animaciones */
+
+/* Propiedad de -transition- */
+/* .container_efects .elemento img{
+    transition: all 0.5s ease-in-out; 
+    /* el ALL representa sobre que atributos se aplica la transicion */
+    /* puede aplicarse por ej solo al border-radius */
+/* }
+.container_efects .elemento img:hover{
+    transform: scale(2);
+    border-radius: 15%;
+    filter:grayscale(1);
+} */ 
+
+/* Propiedad de -animation- con @keyframes */
+/* @keyframes ejemplo{
+    0%{
+        transform: translate(0) ;
+    }
+    33%{
+        transform: translate(200px) ;
+    }
+    66%{
+        transform: translate(-200px);
+    }
+    100%{
+        transform:traslate (0) ;
+    }
+}
+.container_efects .elemento img{
+    animation: ejemplo /* que @keyframe usamos */ /*3s cuanto dura */ /*infinite /* a la largo de cuanto tiempo;
+    /* animation-timing-function: ease; para que haga el movimiento uniforme */
+
+/* Pseudoelementos */
+
+/* ::before - el contenido va a aparecer ANTES del elemento -*/
+.container_efects .elemento::before{
+    content: "BEFORE";
+    color: red;
 }
 
+/* ::after  - el contenido va a aparecer DESPUES del elemento - */ 
+.container_efects .elemento::after{
+    content: "🔥";
+}
