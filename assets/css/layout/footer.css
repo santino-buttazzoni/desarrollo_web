@@ -15,3 +15,8 @@
     color: var(--primary-color);
     font-size: var(--secondary-size);
 }
+.navegacion_footer a img{
+    display: flex;
+    width: 20px;
+    border-radius: 50%;
+}

@@ -1,0 +1,11 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    line-height: 1.5rem;
+
+}
+.lista_ordenada li{
+    list-style: circle;
+    
+}
