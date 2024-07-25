@@ -1,0 +1,25 @@
+.navegation{
+    width: 100%;
+    position: sticky;
+    background-color: var(--secondary-color);
+    
+}
+.navegation__ul{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 1rem;
+}
+.navegation__li{
+    font-family: var(--secondary-font);
+}
+.navegation__a{
+    color:var(--primary-color);
+    font-size: var(--secondary-size);
+}
+.navegation__a:hover{
+    color:var(--third-color);
+    text-decoration: underline;
+    text-shadow: 0.75px 0.75px 1px var(--third-color);
+}

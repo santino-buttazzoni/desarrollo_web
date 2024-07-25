@@ -1,0 +1,20 @@
+/* Importaciones de archivos o modulos de CSS */
+@import url(base/fonts.css);
+@import url(base/reset.css);
+@import url(base/variables.css);
+
+@import url(components/buttons.css);
+@import url(components/forms.css);
+@import url(components/modals.css);
+@import url(components/cards.css);
+
+@import url(layout/header.css);
+@import url(layout/main.css);
+@import url(layout/footer.css);
+
+/* 
+    Autor: Santino Buttazzoni 
+    Version: v 1.0.0
+    Año: 2024
+*/
+

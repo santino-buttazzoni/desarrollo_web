@@ -1,0 +1,22 @@
+/* Creacion de variables */
+:root{
+    /* Colores */
+    --primary-color: hsl(0, 0%, 87%);
+    --secondary-color: rgb(55, 122, 74);
+    --third-color: rgb(27, 78, 43);
+
+    /* Fuentes */
+    --primary-font: "nombre X regular";
+    --secondary-font: "nombre X semibold";
+
+    /* Medidas */
+    --small: 320px;
+    --medium: 480px;
+    --large: 640px;
+    --extra-large: 1080px;
+
+    /* Tamaños de fuentes */
+    --first-size: .5rem;
+    --second-size: 1rem;
+    --third-size: 1.25rem; 
+}
