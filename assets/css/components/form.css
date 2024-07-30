@@ -1,0 +1,246 @@
+/* Index */
+.index_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid  #01717e ;
+    border-radius: 15px;
+    font-weight: lighter;
+}
+.index_form>div>*>input{
+    height: 2rem;
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+    padding: .75rem;
+}
+.container_form1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+.form_text, .form_date-start, .form_date-end, .form_rooms, .form_passengers{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+.form_text .text_icon i{
+    padding-right: 0.5rem;
+}
+.form_text{
+    width:100%;
+    gap: 0.5rem;
+}
+.container_form2{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.form_checkbox{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Roboto", sans-serif;
+}
+.form_control{
+    display: flex;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+/* Vuelos */
+.container-box{
+    margin: 2% 15%;
+    min-width: 480px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 30px; */
+}
+.icon{
+    font-size: 2rem;
+    color:  #01717e;
+    width: 40px;
+    text-align: center;
+}
+.email-button{
+    background-color: #01717e;
+    color: white;
+    padding: 0.25rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #958b8b;
+    height: 40px;
+    /* margin: 0 2%; */
+    border: none;
+    width: 20%;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.email-box{
+width: 70%;
+}
+.email-box input{
+    border: none;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+}
+.email-button:hover{
+    background-color: #198754;
+    cursor: pointer;
+}
+.icon, .email-box, .email-button {
+    margin: 10px;
+}
+/* Disney */
+.middle{
+    padding: 30px;
+}
+.disney-form{
+    margin: 2% 15% 2% 15%;
+    border: 1px solid #01717e;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+}
+.form-item{
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+}
+.form-item input{
+    border: none;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+}
+.form-item p{
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+/* Contacto */
+.form-container{
+    margin: 2% 15% 5% 15%;
+    border: 1px solid #01717e;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    gap: 0.3rem;
+    flex-direction: column;
+}
+.box1-2, .box3-4-5{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.form-container input, .form-container textarea, .form-container select{
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 2rem;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .375rem;
+    padding: 0.5rem;
+}
+.form-box-1{
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    width: 67%;
+}
+.form-box-1 label{
+    margin-bottom: .5rem;
+}
+.form-box-2{
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    width: 33%;
+}
+.form-box-3{
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    width: 50%;
+}
+.form-box-4{
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    width: 25%;
+}
+.form-box-5{
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    width: 25%;
+}
+.form-box-6{
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    width: 100%;
+}
+.form-box-7{
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+}
+.form-box-7 .form-check{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.form-check input{
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+

@@ -1,32 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../plugin/components/Font Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Proyecto gnrl</title>
 </head>
+
 <body>
-    <header>
-        <!-- HEADER se encarga de la navegacion 
-            (la barra de opciones para movernos dentro de la pagina web por ej) -->
+    <header class="header">
         <nav class="nav">
+            <div class="nav_img">
+                <img src="/assets/img/viajemos.com.webp" alt="Viajemos.com">
+            </div>
             <ul>
-                <a href="index.html"><li class="texto_verde">Inicio</li></a>
-                <a href="productos.html"><li>Producto</li></a>
-                <a href="contacto.html"><li>Contacto</li></a>
-                <a href="grid.html"><li>Grid</li></a>
-                <a href="transformaciones-y-animaciones.html"><li>Transformaciones y animaciones</li></a>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/vuelos.html">Vuelos</a></li>
+                <li><a href="/paquetes.html">Paquetes</a></li>
+                <li><a href="/disney.html">Disney</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        
+    <main class="container">
+        <h1>Formulario de contacto</h1>
+        <section class="form-container">
+            <div class="box1-2">
+                <div class="form-box-1">
+                    <label for="text">Nombres</label>
+                    <input type="text">
+                </div>
+                <div class="form-box-2">
+                    <label for="text">Apellido</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="box3-4-5">
+                <div class="form-box-3">
+                    <label for="text">Ciudad</label>
+                    <input type="text">
+                </div>
+                <div class="form-box-4">
+                    <label for="number">Codigo Postal</label>
+                    <input type="number">
+                </div>
+                <div class="form-box-5">
+                    <label for="selección">Provincia</label>
+                    <select class="form-select">
+                        <option selected disabled>Seleccione... </option>
+                        <option>CABA</option>
+                        <option>Buenos Aires</option>
+                        <option>Cordoba</option>
+                        <option>Santa fe</option>
+                        <option>La Pampa</option>
+                        <option>Neuequen</option>
+                        <option>Entre rios</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-box-6">
+                <label for="text">Escribinos tu consulta</label>
+                <textarea rows="3"></textarea>
+            </div>
+            <div class="form-box-7">
+                <div class="form-check">
+                    <input type="checkbox">
+                    <label for="checkbox">Estoy de Acuerdo con los Términos y Condiciones</label>
+                </div>
+            </div>
+            <div class="form-button">
+                <button type="submit" class="button-box">Aceptar</button>
+            </div>
+        </section>
     </main>
-    <footer>
-        <!-- Tambien hace de navegacion / Informacion 
-            (es la barra de pie de pagina donde puede estar los links de redes por ej) -->
-            <p>Desarrollado por Santino - 2024</p>
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="socialmedia">
+                <a href="https://web.facebook.com/Disneyland/?locale=es_LA&_rdc=1&_rdr" rel="noreferrer"
+                    target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/disneyland/" rel="noreferrer" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="/email-support.html" rel="noreferrer" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="/phone-support.html" rel="noreferrer" target="_blank">
+                    <i class="fa-duotone fa-solid fa-phone"></i>
+                </a>
+            </div>
+            <div class="container-contact-list">
+                <ul class="contact-list">
+                    <li><a href="contacto@viajemos.com">contacto@viajemos.com <i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li>+54 9 11 2222 3333 <i class="fa-brands fa-whatsapp"></i></li>
+                    <li>+54 9 11 2222 3333 <i class="fa-duotone fa-solid fa-phone"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text">
+            <p> &#xa9; Copyright 2024 | Desarrollado por Santino &#xae;</p>
+        </div>
     </footer>
 </body>
+
 </html>

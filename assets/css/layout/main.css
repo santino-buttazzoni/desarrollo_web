@@ -1,0 +1,258 @@
+/* Index */
+.paralax {
+    height: 50vh;
+    background-image: url(/assets/img/downtown\ miami.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    scroll-behavior: smooth; /*chequear*/
+    opacity: 0.7;
+}
+h1, h2{
+    text-align: center;
+    margin: 3rem;
+    color: #01717e;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+}
+.subtitle_1{
+    text-align: center;
+    margin-top:3rem;
+    margin-bottom: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.2;
+    font-size: 1.75rem;
+}
+.subtitle_2{
+    font-size: calc(1.3rem + .6vw);
+    font-weight: lighter;
+}
+h3, .card_text p{
+    font-weight: 250;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.2;
+    font-size: calc(1.275rem + .3vw);
+}
+.subtitle_3{
+    color: #01717e;
+    font-size: calc(1.3rem + .6vw);
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+}
+/* Vuelos */
+.purple-line{
+    width: 100%;
+    margin: 0 auto;
+    height: 3px;
+    background: #4c0a97;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.paralax-2 {
+    height: 50vh;
+    background-image: url(/assets/img/Motaña\ rusa\ 2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    scroll-behavior: smooth; /*chequear*/
+    opacity: 0.7;
+}
+.subtitle_4{
+    font-weight: lighter;
+    font-size: 2.5rem;
+}
+.container-text{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 10%;
+}
+.text-box{
+    font-family: "Roboto", sans-serif;
+    padding: 40px; 
+}
+.text-box h4{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+}
+.text-box p{
+    padding-bottom: 0.5rem;
+    font-weight: lighter;
+}
+
+/* Paquetes */
+.title_2{
+    font-weight: lighter;
+}
+.text-container-1{
+    font-family: "Roboto",sans-serif;
+    margin: 0 2rem;
+    font-weight: lighter;
+}
+.text-container-1 p{
+    padding: 0.75rem;
+}
+.sliders-box{
+    height: 300px;
+    margin: 2rem 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.slide-track{
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(100% * 3);
+    box-sizing: border-box;
+}
+.slide img{
+    height: 300px;
+    display: block;
+    width:500px;
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
+
+/* Disney */
+.paralax-3{
+    height: 50vh;
+    background-image: url(/assets/img/personajes07.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    scroll-behavior: smooth;
+    opacity: 0.7;
+}
+.welcome{
+    margin: 1rem 0;
+}
+.subtitle_5{
+    font-weight: lighter;
+}
+.disney-textbox{
+    padding: 0 10%;
+}
+.disney-textbox p{
+    padding: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+}
+.subtitle_6{
+    font-weight: lighter;
+    margin-top: 0;
+    font-size: 2rem;
+}
+.tickets{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 3%;
+    flex-wrap: wrap;
+}
+.tickets-box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    align-items: center;
+    border: 1px solid #004848;
+    border-radius: 20px;
+    margin: 3% 1%;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+}
+.tickets-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-ticket .discount{
+    font-size: 18px;
+    font-weight: 400;
+    color: #004848;
+}
+.tickets p{
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0.25rem ;
+}
+.line2{
+    width: 90%;
+    margin: 10px auto;
+    height: 1px;
+    background: #004848;
+}
+.box1{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.box1 h3{
+    font-size: 25px;
+}
+.box1 h4{
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 0.5rem;
+}
+.box1 span{
+    font-size: 60%; 
+    padding-right: 0.25rem;
+}
+.box1 p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+.paralax-4{
+    height: 50vh;
+    background-image: url(/assets/img/personajes01.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    scroll-behavior: smooth;
+    opacity: 0.7;
+}
+.subtitle_7{
+    font-size: 2rem;
+    margin: 2rem;
+}
+.text-container-2{
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+}
+.text-container-2 p{
+    padding: .5rem 3%;
+}
+

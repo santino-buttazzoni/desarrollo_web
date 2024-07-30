@@ -1,0 +1,20 @@
+:root{
+    /* colores */
+    --verde_oscuro: #083a08;
+    --verde_claro: #427142;
+    --gris_claro: #ccc;
+
+    /* escalas */
+    --small: 320px;
+    --medium: 480px;
+    --large: 640px;
+    --xlarge: 1080px;
+
+    /* sizes */
+    --small_size: 0.5rem;
+    --medium_size: 1rem;
+    --large_size: 1.5rem;
+    --xlarge_size: 2rem;
+
+    
+}

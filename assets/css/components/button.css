@@ -1,0 +1,44 @@
+/* Disney */
+.button-box{
+    flex: 0 0 auto;
+    width: 100%;
+}
+.button{
+    width: 260px;
+    height: 40px;
+    max-width: 320px;
+    background-color: #01717e;
+    color: #e7e7e7;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #958b8b;
+    margin: 2% 0;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #198754;
+}
+/* Contacto */
+.form-button{
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    margin-left:auto;
+    margin-right: auto;
+    width: 320px;
+}
+.button-box{
+    width: 100%;
+    height: 40px;
+    background-color: #01717e;
+    color: #e7e7e7;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #958b8b;
+    margin: 2% 0;
+}
+.button-box:hover{
+    cursor: pointer;
+    background-color: #198754;
+}
