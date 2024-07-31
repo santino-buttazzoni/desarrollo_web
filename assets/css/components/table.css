@@ -28,3 +28,6 @@
     font-weight: 500;
     padding: 0.25rem 0.5rem ;
 }
+.body-box tr:hover{
+    background-color: #f9f7f7;
+}
